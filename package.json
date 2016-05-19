@@ -1,0 +1,35 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keyword": [
+    "react",
+    "typescript"
+  ],
+  "author": "kenta sugiyama",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-tsc": "^1.1.5",
+    "gulp-typescript": "^2.13.1",
+    "react": "^0.14.8",
+    "react-addons": "^0.9.1-deprecated",
+    "react-dom": "^0.14.8",
+    "react-native-cli": "^0.2.0",
+    "run-sequence": "^1.1.5",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
+  }
+}

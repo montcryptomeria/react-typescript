@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "module": "umd",
+        "target": "es5",
+        "noImplicitAny": true,
+        "experimentalDecorators": false,
+        "sourceMap": true,
+        "declaration": false,
+        "noEmitOnError": true,
+        "jsx": "react"
+    },
+    "filesGlob": [
+        // "./lib/**/*.ts",
+        // "./lib/**/*.tsx",
+        // "!./lib/**/*.d.ts",
+        // "./test/**/*.ts",
+        // "./test/**/*.tsx",
+        // "!./test/**/*.d.ts",
+        "./ts/**/*.ts",
+        "../typings/**/*.ts",
+        "../node_modules/typescript/lib/lib.es6.d.ts"
+    ],
+    "files": [
+        // "ts/bootstrap.ts",
+        // "ts/main.tsx",
+        // "ts/todoitem.tsx"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings/main",
+        "typings/main.d.ts"
+    ]
+}
