@@ -12,13 +12,12 @@ var gulp        = require('gulp'),
     tsc         = require('gulp-tsc');
     // $ = require('gulp-load-plugins');
 
-
 var project = ts.createProject('./src/tsconfig.json', {typescript: typescript});
 
 gulp.task('through', function () {
   return gulp
-    .src(['./src/**/*.html'])
-    .pipe(gulp.dest('build' ) );
+    .src("./src/**/*.html")
+    .pipe(gulp.dest("build" ) );
 });
 
 gulp.task("sass", function() {
@@ -28,18 +27,8 @@ gulp.task("sass", function() {
 });
 
 gulp.task('compile', function () {
-  var result = gulp.src('./src/ts/**/*{ts,tsx}')
-  // var result = gulp.src('./src/ts/main.ts')
+  var result = gulp.src('./src/ts/**/*ts')
     .pipe(ts(project));
-
-    //return gulp.src('./src/ts/main.ts')
-    //    .pipe(tsc({
-    //        module: 'amd',
-    //        comment: false,
-    //        keepTree: false,
-    //        out: 'main.js'
-    //    }))
-    //    .pipe(gulp.dest('.tmp'));
   return result.js.pipe(gulp.dest('.tmp'));
 });
 
@@ -55,7 +44,7 @@ gulp.task('library', function () {
     'node_modules/react/dist/react-with-addons.js'
   ])
     .pipe(concat('lib.js'))
-    .pipe(gulp.dest('./build/common/webapp/js/'));
+    .pipe(gulp.dest('./build/common/js/libs/'));
 })
 
 gulp.task('clean', function (done) {
@@ -69,12 +58,7 @@ gulp.task('watch',function(){
  
 gulp.task('default', function () {
 	runSequence(
-		// 'clean',
-        'library',
-		'bundle',
-		//['library', 'jst', 'mainjs', 'deeplinkjs', 'styles:scss'],
-		//'uglify',
-		//'done'
-    'clean'
+        ['library', 'bundle'],
+        'clean'
 	);
 });

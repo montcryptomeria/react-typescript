@@ -27,7 +27,7 @@ export class DashboardView extends React.Component<Props, State> {
         //}
         return (
             React.DOM.main({
-                    className: 'dashboard__main scrollable__content'
+                    className: 'contents'
                 },
                 component
             )
