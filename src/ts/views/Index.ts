@@ -19,5 +19,3 @@ export class Index extends React.Component<Props, State> {
         )
     }
 }
-    //export var create = React.createFactory(Component);
-//}
