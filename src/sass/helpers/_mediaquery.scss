@@ -1,0 +1,44 @@
+// -------------------------------------------------------------------
+//  mediaquery.scss
+// -------------------------------------------------------------------
+
+@mixin media($mediaSize) {
+  @if $mediaSize == pc {
+    // PC用
+    @media (min-width: $BREAK_POINT_TABLET + 1) {
+      @content;
+    }
+  } @else if $mediaSize == tb {
+    // タブレット用
+    @media (min-width: $BREAK_POINT_SP + 1) and (max-width: $BREAK_POINT_TABLET) {
+      @content;
+    }
+  } @else if $mediaSize == sp {
+    // SP用
+    @media (max-width: $BREAK_POINT_SP) {
+      @content;
+    }
+  } @else if $mediaSize == landscape {
+    @media only screen and (orientation: landscape) {
+      @content;
+    }
+  }
+}
+
+@mixin mq($min-width, $max-width) {
+  @media (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin mq-min($min-width) {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin mq-max($max-width) {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}

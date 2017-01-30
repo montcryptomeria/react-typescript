@@ -1,0 +1,87 @@
+# THIS IS A TEXT FILE THAT GIT WILL IGNORE A FILE.
+# THE ONE CAN BE COMMITTED INTO THE REPOSITORY, THUS SHARING THE RULUE WITH ANY OTHERS.
+
+# OS generated files #
+# ------------------ #
+## mac
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+Icon
+.Spotlight-V100
+
+## win
+Thumbs.db
+ehthumbs.db
+.Trashes
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+#global
+.htaccess
+
+# Editor
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode
+## Directory-based project format
+.idea/
+*.iml
+.idea_modules/
+
+## DW Dreamweaver added files
+_notes
+dwsync.xml
+
+## sublimetext
+*.sublime-workspace
+
+# Frameworks #
+# ---------- #
+### Sass Ignores - "Sassy CSS" http://sass-lang.com/
+*.sass-cache
+
+### Fuel PHP ###
+fuel/app/logs/*/*/*
+fuel/app/cache/*/*
+
+### Node.js ###
+lib-cov
+lcov.info
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+.grunt
+
+node_modules
+
+# svn
+.svn/
+
+/.sass-cache
+/node_modules
+/node_modules
+*.sass-cache
+*.idea
+*.iml
+
+**/*.mp4
+**/*.mp3
+
+build/**/*.html
+build/**/*.jpg
+build/**/*.jpeg
+build/**/*.png
+build/**/*.svg

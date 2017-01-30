@@ -1,0 +1,35 @@
+// -------------------------------------------------------------------
+//  structure.scss
+// -------------------------------------------------------------------
+
+html, body {
+  height: 100%;  
+}
+html {
+  background: $BASE_BG_COLOR;
+}
+body {
+  @include fontsize($BASE_FONT_SIZE);
+  @include media(sp) {
+    @include fontsize($BASE_FONT_SIZE_SP);
+  }
+  background: $BASE_BG_COLOR;
+  color: $BASE_TEXT_COLOR;
+  font-family: $BASE_FONT_FAMILY;
+  line-height: $BASE_LINE_HEIGHT;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+@include media(sp) {
+  body {
+    overflow-x: hidden;
+  }
+  .screen {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    overflow-x: hidden;
+  }
+}

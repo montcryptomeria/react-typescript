@@ -1,0 +1,72 @@
+// -------------------------------------------------------------------
+//  state.scss
+// -------------------------------------------------------------------
+
+.is-show {
+  display: inherit !important;
+}
+.is-hide {
+  display: none !important;
+}
+.is-visible {
+  visibility: visible !important;
+}
+.is-hidden {
+  visibility: hidden !important;
+}
+.is-fixed {
+  position: fixed !important;
+}
+.is-absolute {
+  position: absolute !important;
+}
+.is-overflow-hidden {
+  overflow: hidden !important;
+}
+.is-disable {
+  a {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+.alignLeft {
+  text-align: left;
+}
+.alignRight {
+  text-align: right;
+}
+.alignCenter {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
+.inline {
+  display: inline !important;
+}
+.inlineBlock {
+  display: inline-block !important;
+}
+
+.is-sp {
+  @include media(pc) {
+    display: none;
+  }
+  @include media(tablet) {
+    display: none;
+  }
+}
+.is-pc {
+  @include media(sp) {
+    display: none;
+  }
+}

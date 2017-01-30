@@ -1,0 +1,40 @@
+// -------------------------------------------------------------------
+//  variables.scss
+// -------------------------------------------------------------------
+
+// Width
+// -------------------------------------------------------------------
+$SITE_WIDTH: 1000px;
+$CONTENT_WIDTH: 960px;
+$BREAK_POINT_SP: 640px;
+$BREAK_POINT_TABLET: 960px;
+
+// Font
+// -------------------------------------------------------------------
+$BASE_FONT_SIZE: 14;
+$BASE_FONT_SIZE_SP: 13;
+$BASE_LINE_HEIGHT: 1.6;
+$BASE_FONT_FAMILY: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+$EN_FONT_FAMILY: Arial, Helvetica, Roboto, 'Droid Sans', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+
+// Web Font
+// -------------------------------------------------------------------
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+//$WEB_FONT_FAMILY: 'Open Sans', sans-serif;
+
+// Color
+// -------------------------------------------------------------------
+$BASE_TEXT_COLOR: #000;
+$BASE_BG_COLOR: #fff;
+$KEY_COLOR: #a02223;
+
+// Link Color
+// -------------------------------------------------------------------
+$BASE_LINK_COLOR: #a02223;
+$BASE_VISITED_COLOR: $BASE_LINK_COLOR;
+$BASE_HOVER_COLOR: $BASE_LINK_COLOR;
+$BASE_ACTIVE_COLOR: $BASE_LINK_COLOR;
+
+// Image Path
+// -------------------------------------------------------------------
+$IMAGE_DIR: "../images/";
