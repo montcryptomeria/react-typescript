@@ -10,11 +10,11 @@ var path = require('../path.js');
 //--------------------------------------------------------------------------------
 module.exports = {
     // 対象ファイル
-    src: path.srcDir + path.sassDir + '**/*.scss',
+    src: path.srcDir + path.sassDir + 'runfiles/' + '**/*.scss',
     // 出力先
     dest: {
-        build: path.buildDir + path.cssDir,
-        release: path.releaseDir + path.cssDir
+        build: path.buildDir,
+        release: path.releaseDir
     },
     // AutoPrefixerの設定 
     autoprefixer: {
