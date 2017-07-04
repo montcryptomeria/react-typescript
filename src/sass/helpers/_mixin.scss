@@ -9,6 +9,22 @@
   font-size: $size * 1px;
 }
 
+@mixin in($name) {
+  @at-root {
+    #{&}-#{$name} {
+      @content;
+    }
+  }
+}
+
+@mixin at($name) {
+  @at-root {
+    #{&}_#{$name} {
+      @content;
+    }
+  }
+}
+
 // clearfix
 // -------------------------------------------------------------------
 @mixin clearfix {
