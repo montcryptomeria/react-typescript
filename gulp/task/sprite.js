@@ -26,6 +26,7 @@ gulp.task(taskName.sprite, function () {
                 cssName: item.out.sass,
                 imgPath: item.path + item.out.img,
                 cssFormat: 'scss',
+                cssTemplate: 'src/sass/helpers/sprite_template.txt',
                 padding: item.padding
             }));
 

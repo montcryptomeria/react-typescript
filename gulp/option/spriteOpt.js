@@ -16,7 +16,7 @@ module.exports = {
             // 出力先
             dest: {
                 img: path.srcDir + path.imagesDir,
-                sass: path.srcDir + path.sassDir
+                sass: path.srcDir + path.sassDir + 'helpers/'
             },
             // 出力するファイル名
             out: {
